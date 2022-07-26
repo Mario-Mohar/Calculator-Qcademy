@@ -26,3 +26,9 @@ function backspace() {
         display.text('0');
     }
 }
+
+function plus(a, b) {
+    const numberA = Number(a);
+    const numberB = Number(b);
+    return numberA + numberB;
+}
