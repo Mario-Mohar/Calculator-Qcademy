@@ -32,3 +32,29 @@ function plus(a, b) {
     const numberB = Number(b);
     return numberA + numberB;
 }
+
+function minus(a, b) {
+    const numberA = Number(a);
+    const numberB = Number(b);
+    return numberA - numberB;
+}
+
+function multiply(a, b) {
+    const numberA = Number(a);
+    const numberB = Number(b);
+    return numberA * numberB;
+}
+
+function divide(a, b) {
+    const numberA = Number(a);
+    const numberB = Number(b);
+    return numberA / numberB;
+}
+
+function calculate() {
+    const text = display.text();
+    const numbers = text.split(' ');
+    const operator = text.slice(-1);
+    const result = eval(numbers.join(operator));
+    display.text(result);
+}
